@@ -65,7 +65,7 @@ def primeOpt3?(num)
   top = Math.sqrt(num).round + 1
   puts top
   numbers = (2..(top)).to_a
-  numbers.each{e ||
+  numbers.each{ |e|
     if num % e == 0
       return false
     end
