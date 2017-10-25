@@ -62,10 +62,15 @@ def primeOpt3?(num)
   if num < 0
     num *= -1
   end
-  top = Math.sqrt(num)
+  top = Math.sqrt(num).round + 1
   puts top
-  numbers = (2..(top.round)).to_a
-  return true if numbers.select{|e| num % e == 0}.size == 0 else false
+  numbers = (2..(top)).to_a
+  numbers.each{e || 
+    if num % e == 0
+      return false
+  }
+  true
+  #return true if numbers.select{|e| num % e == 0}.size == 0 else false
 end
 
 def littleFermat?(num)
