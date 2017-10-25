@@ -91,7 +91,7 @@ p = 86028157
 #puts Benchmark.measure { primeOpt?(p) }
 puts Benchmark.measure { primeOpt2?(p) }
 puts Benchmark.measure { primeOpt3?(p) }
-puts Benchmark.measure { littleFermat?(p) }
+#puts Benchmark.measure { littleFermat?(p) }
 puts primeOpt2?(p)
 puts primeOpt3?(p)
-puts littleFermat?(p)
+#puts littleFermat?(p)
