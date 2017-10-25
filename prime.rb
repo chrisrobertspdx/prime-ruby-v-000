@@ -68,6 +68,7 @@ def primeOpt3?(num)
   numbers.each{e ||
     if num % e == 0
       return false
+    end
   }
   true
   #return true if numbers.select{|e| num % e == 0}.size == 0 else false
