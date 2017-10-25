@@ -65,7 +65,7 @@ def littleFermat?(num)
   return true if ((2 ** num) - 2) % num == 0 else false
 end
 #puts prime?(10)
-p = 32452867
+p = 86028157
 #puts Benchmark.measure { prime_fast?(p) }
 #puts Benchmark.measure { prime?(p) }
 #puts Benchmark.measure { primeOpt?(p) }
