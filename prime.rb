@@ -55,6 +55,19 @@ def primeOpt2?(num)
   return true if numbers.select{|e| num % e == 0}.size == 0 else false
 end
 
+def primeOpt3?(num)
+  if num == 1 || num == -1 || num == 0
+    return false
+  end
+  if num < 0
+    num *= -1
+  end
+  top = Math.sqrt(num)
+  puts top
+  numbers = (2..(top.round)).to_a
+  return true if numbers.select{|e| num % e == 0}.size == 0 else false
+end
+
 def littleFermat?(num)
   if num == 1 || num == -1 || num == 0
     return false
